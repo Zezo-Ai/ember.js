@@ -18,7 +18,7 @@ jobs:
         with:
           persist-credentials: false
       - uses: ./.github/actions/setup
-      - uses: wyvox/pkg-size@4c68a40496b9dd2d228575f8738cdfa4ad277754
+      - uses: wyvox/pkg-size@copilot/add-option-for-multiple-tables
         with:
           build-command: "pnpm build"
           display-size: uncompressed, brotli
