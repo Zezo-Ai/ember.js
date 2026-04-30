@@ -23,5 +23,8 @@ jobs:
           build-command: "pnpm build"
           display-size: uncompressed, brotli
           unchanged-files: hide
+          paths: |
+            Dev: dist/dev
+            Prod: dist/prod
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
