@@ -18,7 +18,7 @@ jobs:
         with:
           persist-credentials: false
       - uses: ./.github/actions/setup
-      - uses: wyvox/pkg-size@c70b550facd54ce6cd578619494ec2334a85bc4f
+      - uses: wyvox/pkg-size@063e4ba2107658fb6bfa4d4f7d10059714f94745
         with:
           build-command: "pnpm build"
           display-size: uncompressed, brotli
