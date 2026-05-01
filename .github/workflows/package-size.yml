@@ -18,10 +18,13 @@ jobs:
         with:
           persist-credentials: false
       - uses: ./.github/actions/setup
-      - uses: wyvox/pkg-size@4c68a40496b9dd2d228575f8738cdfa4ad277754
+      - uses: wyvox/pkg-size@99124c98adc9d470c19b9b88f103163067a9d480
         with:
           build-command: "pnpm build"
           display-size: uncompressed, brotli
           unchanged-files: hide
+          paths: |
+            dist/dev
+            dist/prod
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
