@@ -37,7 +37,6 @@
   "scripts": {
     "actions-up": "pnpm dlx actions-up",
     "bench": "node ./bin/benchmark.mjs",
-    "bench:sizes": "pnpm build && cd smoke-tests/v2-app-hello-world-template && pnpm vite build",
     "bench:precompile": "node --expose-gc bin/precompile.bench.mjs",
     "build:js": "rollup --config",
     "build:types": "node types/publish.mjs",
