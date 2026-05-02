@@ -18,7 +18,7 @@ jobs:
         with:
           persist-credentials: false
       - uses: ./.github/actions/setup
-      - uses: wyvox/pkg-size@e7bc11305b41e63cf7e95cddb904b4fba1b0c31d
+      - uses: wyvox/pkg-size@f1e6283bb99d2cf2afebab9cef02bc7d94d7b2c0
         with:
           build-command: "./bin/build-size-comparison-dists.sh"
           display-size: uncompressed, brotli
